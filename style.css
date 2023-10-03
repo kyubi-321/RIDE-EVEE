@@ -163,6 +163,10 @@ ion-icon {
     flex-direction: column;
 }
 
+.phone{
+    margin-left: 200px;
+}
+
 .memumi{
     margin-left: 80px;
     width: fit-content;
@@ -221,36 +225,78 @@ ion-icon {
     text-align: center;
     justify-content: center;
     
-    margin-left: 500px;
+    margin-left: 400px;
 }
 
 
 .fooim{
-    display: inline-block;
+   width: fit-content;
+   margin-left: 100px;
 }
 
 
-
+/* <button type="submit" class="rounded-r-[20px] py-4 px-8 bg-[#2F313C] border border-white"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path></svg></button> */
 
 .fooinp{
-    padding: 4px;
+    padding-left: 4px;
     width: 200px;
-    border: 2px solid white;
+    border: 1px solid  white;
     border-radius: 20px;
+    outline: none;
 }
 
 .foolin{
-  
-    margin-right: 550px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-left: 60px;
+   
+}
+
+.linki{
+    margin: 5px;
+    text-decoration: none;
+    color: white;
 }
 
 
 .lastp{
-    width: 400px;
+    width: fit-content;
     
     margin-left: 450px;
     color: white;
     font-size: large;
+}
+
+.news{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.newsHead{
+    color: white;
+    font: bold;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* <button type="submit" class="rounded-r-[20px] py-4 px-8 bg-[#2F313C] border border-white"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path></svg></button> */
+
+.btnlast{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #2F313C;
+    border-color: white;
 }
 
 
@@ -705,6 +751,7 @@ a {
 
 
 .navbar {
+    
     background: white;
     position: fixed;
     top: 70px;
