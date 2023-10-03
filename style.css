@@ -92,7 +92,7 @@
 }
 
 li {
-    list-style: none;
+    list-style: disc;
 }
 
 a {
@@ -110,6 +110,8 @@ ion-icon {
 }
 
 .road{
+    position: relative;
+    
     
     object-fit: cover;
     width: 1450px;
@@ -117,14 +119,61 @@ ion-icon {
     z-index: 0;
 }
 
+.roadim{
+    position: absolute;
+    z-index: 1;
+    
+}
+
 .customer{
-    color: green;
+    color: #38B000;
     font-size: small;
 }
 
+.Ghead{
+    color: #38B000;
+    font-size: 30px;
+    font: bolder;
+
+}
+
+.headrit{
+    color: #38B000;
+}
+
+.iconi{
+    width: 60px;
+    height: 60px;
+}
+.listi{
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    font-size: 20px;
+}
+
+.listiclass{
+    margin: 40px;
+}
+
+.fleri{
+    margin-left: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.memumi{
+    margin-left: 80px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .kalo{
-    color: green;
-    font-size: 40px;
+    color: #38B000;
+    font-size: 20px;
     text-align: center;
     justify-content: center;
     margin: 10px;
@@ -140,7 +189,7 @@ ion-icon {
     flex-direction: row;
    
     
-    background-color: rgb(74, 153, 74);
+    background-color: #38B000;
 }
 
 .cardni{
@@ -208,6 +257,151 @@ ion-icon {
 
 
 
+/* FORM  w-[1190px] h-[250px] mx-auto relative top-[50px] bg-white rounded-2xl*/
+
+.form1{
+    position: relative;
+    width: 1190px;
+    height: 250px;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: 170px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* flex justify-center gap-x-20 pt-[20px] */
+.form2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 20px;
+    padding-top: 20px;
+    margin: 10px;
+}
+/* flex justify-center gap-x-20 pt-5 */
+
+.form3{
+    display: flex;
+
+    justify-content: center;
+    row-gap: 20px;
+    padding-top: 5px;
+    margin: 10px;
+}
+
+/* pt-10 px-[80px] flex items-center justify-center gap-x-5 */
+
+.form4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    padding-top: 10px;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+/* flex items-center */
+.form5{
+    display: flex;
+    align-items: center;
+
+    
+}
+/* -ml-5 mt-4 */
+.form6{
+    margin-left: -5px;
+    margin-top: 30px;
+    margin-right: 10px;
+
+}
+
+/* flex items-center -mt-1 */
+.form7{
+    display: flex;
+    align-items: center;
+    margin-top: -1px;
+}
+ /* text-center mt-5 */
+.form8{
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 500px;
+
+}
+
+.foms{
+    margin-right: 40px;
+    
+}
+/* custom-date-input */
+
+
+/*  */
+
+/* bg-[#38B000] text-white h-[29px] w-[126px] shadow-md rounded-[5px] */
+.btn1{
+    margin: 10px;
+    background-color: white;
+    color: black;
+    height: 29px;
+    width: 126px;
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+/* bg-[#38B000] text-white h-[25px] w-[115px] shadow-md rounded-[5px] */
+
+.btn2{
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 25px;
+    width: 115px;
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.explorebtn{
+    margin: 10px;
+    background-color: #38B000;
+    color: white;
+    height: 25px;
+    width: 115px;
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+
+}
+
+/* PARA! * font-bold text-[15px]  font-bold text-[15px]*/
+.para1{
+    font: bolder;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+
+    /* input  w-[220px] text-[14px] border-b-2 outline-0*/
+}
+
+.inpus1{
+    width: 180px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+}
+
+
+
+
+.local{
+    visibility: hidden;
+}
+
+.airport{
+    visibility: hidden;
+}
 
 
 
@@ -222,7 +416,7 @@ ion-icon {
 }
 
 .carhead{
-    color: rgb(53, 154, 53);
+    color: #38B000;
     font: bold;
     font-weight: 800;
 }
@@ -232,8 +426,10 @@ ion-icon {
     position: absolute;
     width: 700px;
     margin: 50px;
-    text-align: center;
-    justify-content: center;
+    padding: 40px;
+    font-size: 30px;
+    font-weight: 900;
+    
     z-index: 1;
 }
 
@@ -242,6 +438,16 @@ ion-icon {
     z-index: 0;
 }
 
+.cross{
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.ptxt{
+    font-size: 15px;
+    
+}
 
 button,
 input {
@@ -310,17 +516,17 @@ a {
 
 .btn {
     position: relative;
-    background: var(--background, var(--medium-sea-green));
+    background: #38B000;
     color: var(--color, var(--white));
-    min-width: var(--width, 40px);
-    min-height: var(--height, 40px);
-    padding: 5px;
+    width: 150px;
+    height: auto;
+    padding: 2px;
     margin-top: 1px;
     display: grid;
     place-items: center;
     border-radius: var(--radius-14);
     font-family: var(--ff-nunito);
-    font-size: var(--fs-6);
+    font-size: 14px;
     font-weight: var(--fw-600);
     overflow: hidden;
 }
@@ -340,13 +546,9 @@ a {
     transition: var(--transition);
 }
 
-.btn:is(:hover, :focus) {
-    box-shadow: var(--shadow-2);
-}
 
-.btn:is(:hover, :focus)::before {
-    opacity: 1;
-}
+
+
 
 .h1,
 .h2,
@@ -383,7 +585,7 @@ a {
 /*-----------------------------------*\      #HEADER  \*-----------------------------------*/
 
 .logo img {
-    width: 200px;
+    width: 100px;
     height: auto;
   }
   
@@ -393,13 +595,13 @@ a {
 
 .header {
     background: white;
-    position: fixed;
+    
     top: 0;
     left: 0;
     width: 100%;
     transition: var(--transition);
     z-index: 4;
-    padding: 25px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -440,7 +642,30 @@ a {
 }
 
 .imu{
-    margin: 10px;
+    margin: 20px;
+}
+
+.coly{
+    display: flex;
+    flex-direction: row;
+}
+
+.Gheadi{
+    color: #38B000;
+    font-size: 30px;
+    font: bolder;
+    width: fit-content;
+    margin-left: 300px;
+
+}
+
+.emply{
+    align-items: center;
+    justify-content: center;
+    
+    margin: 20px;
+    margin-left: 100px;
+    padding: 10px;
 }
 
 .memu{

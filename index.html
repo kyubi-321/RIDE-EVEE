@@ -32,7 +32,7 @@
             </a>
 
             <span>
-                <img src="images\Group 1000001772.png" alt="cross">
+                <img class="cross" src="images\Group 1000001772.png" alt="cross">
             </span>
 
 
@@ -42,7 +42,112 @@
         <section>
             <div>
 
-                <img class="inputs" src="images\Group 1000001851.png" alt="roadim">
+                <div class="roadim">
+                    <div class="form1">
+                        <div>
+                            <div class="form2">
+                                <button class="btn1" onclick="changeButtonColor(this)" id="outstation">
+                                    Outstation
+                                </button>
+                                <button class="btn1" onclick="changeColor(this)" id="locals">
+                                    Local
+                                </button>
+                                <button class="btn1" onclick="changeColor(this)" id="airports">
+                                    Airport
+                                </button>
+                            </div>
+                            <div class="form3">
+                                <button class="btn2" onclick="changeColor(this)" id="oneway">
+                                    One Way
+                                </button>
+                                <button class="btn2" onclick="changeColor(this)" id="roundtrip">
+                                    Round Trip
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="block">
+                                <div>
+                                    <div class="form4">
+                                        <div class="form5">
+                                            <div class="foms">
+                                                <p class="para1">From</p>
+                                                <input class="inpus1" type="text" id=""
+                                                    placeholder="start typing city" />
+                                            </div>
+                                            <div class="form6">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    version="1.1" viewBox="0 0 17 17" height="20" width="20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g></g>
+                                                    <path
+                                                        d="M8.5 0.5c-3.032 0-5.5 2.467-5.5 5.5 0 4.373 4.913 10.086 5.122 10.328l0.378 0.435 0.378-0.436c0.209-0.241 5.122-5.954 5.122-10.327 0-3.033-2.468-5.5-5.5-5.5zM8.5 15.215c-1.146-1.424-4.5-5.879-4.5-9.215 0-2.481 2.019-4.5 4.5-4.5s4.5 2.019 4.5 4.5c0 3.333-3.354 7.791-4.5 9.215zM8.5 3.139c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zM8.5 8.139c-1.103 0-2-0.897-2-2s0.897-2 2-2 2 0.897 2 2-0.897 2-2 2z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="form5">
+                                            <div class="foms">
+                                                <p class="para1">To</p>
+                                                <input class="inpus1" type="text" id=""
+                                                    placeholder="start typing city" />
+                                            </div>
+                                            <div class="form6">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    version="1.1" viewBox="0 0 17 17" height="20" width="20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g></g>
+                                                    <path
+                                                        d="M8.5 0.5c-3.032 0-5.5 2.467-5.5 5.5 0 4.373 4.913 10.086 5.122 10.328l0.378 0.435 0.378-0.436c0.209-0.241 5.122-5.954 5.122-10.327 0-3.033-2.468-5.5-5.5-5.5zM8.5 15.215c-1.146-1.424-4.5-5.879-4.5-9.215 0-2.481 2.019-4.5 4.5-4.5s4.5 2.019 4.5 4.5c0 3.333-3.354 7.791-4.5 9.215zM8.5 3.139c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zM8.5 8.139c-1.103 0-2-0.897-2-2s0.897-2 2-2 2 0.897 2 2-0.897 2-2 2z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="form5">
+                                            <div class="foms">
+                                                <p class="para1">Pick Up Date</p>
+                                                <input class="inpus1" type="date" id="dateInput"
+                                                    placeholder="start typing date" />
+                                            </div>
+                                        </div>
+                                        <div class="form7">
+                                            <div class="foms">
+                                                <p class="para1">Pick Up At</p>
+                                                <input class="inpus1" type="text" id=""
+                                                    placeholder="start typing time" />
+                                            </div>
+                                            <div class="form6">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 512 512" height="20" width="20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form8">
+                                        <button class="explorebtn">
+                                            Explore Cabs
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="local">
+                                <div>
+                                    <h1>Local Form</h1>
+                                </div>
+                            </div>
+                            <div class="airport">
+                                <div>
+                                    <h1>Airport Form</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
                 <img class="road" src="images\Road Trip by car image 1.png" alt="road">
 
@@ -60,9 +165,7 @@
 
         <section class="section-featured" id="featured">
             <h1 class="carhead">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, exercitationem iste. Adipisci ipsum
-                cumque velit facilis explicabo, aliquam repudiandae, id nam possimus neque cum assumenda rerum
-                blanditiis eius. Inventore, perspiciatis.
+                India's Leading One-Way Inter-City Cab Service Provider
             </h1>
             <div class="container">
 
@@ -127,11 +230,13 @@
         </section>
 
         <section>
-            <h1 class="mytext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic rerum, voluptas magni
-                eius illo voluptatibus, cumque debitis quibusdam odit, dolores reprehenderit rem. Doloribus porro
-                reprehenderit nobis nihil sequi maxime aperiam numquam voluptatum corrupti culpa laborum itaque corporis
-                at voluptate necessitatibus consequuntur natus minima inventore delectus quaerat ipsam, accusamus
-                deleniti.</h1>
+            <h1 class="mytext">Why choose AC Bus or AC Train
+                for your One-way Journey?
+                <p class="ptxt">Our oneway cab service is cheaper than AC bus and 2 tier AC train ticket fares, it reduces your travel time and you travel at your own private space also to enjoy your journey. Our one way taxi will come at your doorstep and take you to your desired destination. So book you oneway cab from Lucknow to Gorakhpur or Varanasi to Bareilly
+                    read More....</p>
+            </h1>
+
+                
             <img class="imi" src="images\uriel-soberanes-jg4E9uUXxqU-unsplash 2.png" alt="background">
 
         </section>
@@ -145,9 +250,8 @@
 
                 <div class="memu">
 
-                    <div>
-                        <h1 class="taki">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic rerum cumque
-                            officiis eligendi ut.
+                    <div class="memumi">
+                        <h1 class="Ghead">WHY CHOOSE YATRI CAR RENTAL?
 
                         </h1>
                     </div>
@@ -156,15 +260,27 @@
                         <div class="mimi">
                             <div class="carid">
                                 <div class="caridcon">
-                                    <img src="Icons\Iconsax\Linear\flag.png" alt="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ex.</p>
+                                    <img class="iconi" src="Icons\Iconsax\Linear\flag.png" alt="">
+                                    <div class="fleri">
+                                       
+                                    <h1 class="headrit">
+                                        FIRST RESPONSE TIME
+                                    </h1>
+                                    <p>Avail Best Car Rental Service in Lucknow with driver for Local or Outstation within the moment of your call for best car hire experience.
+
+                                    </p>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="carid">
                                 <div class="caridcon">
-                                    <img src="Icons\vuesax\linear\vuesax\linear\people.png" alt="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ex.</p>
+                                    <img class="iconi" src="Icons\vuesax\linear\vuesax\linear\people.png" alt="">
+                                    <div class="fleri">
+                                        
+                                    <h1 class="headrit">EASY TO ORDER</h1>
+                                    <p>Easily Book Cab Online with our website or call our customer support team</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -172,15 +288,27 @@
                         <div class="mimi">
                             <div class="carid">
                                 <div class="caridcon">
-                                    <img src="Icons\Untitled (1)\vuesax\linear\vuesax\linear\people.png" alt="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ex.</p>
+                                    <img class="iconi" src="Icons\Untitled (1)\vuesax\linear\vuesax\linear\people.png" alt="">
+
+                                   <div class="fleri">
+                                    <h1 class="headrit">
+                                        VAST FLEET
+                                    </h1>
+                                    <p>We have all kinds of Car on Rent available like Sedan, Suv, Muv, Premium Sedan, Tampo Traveller etc as per ur requirement</p>
+                                   </div>
                                 </div>
                             </div>
 
                             <div class="carid">
                                 <div class="caridcon">
-                                    <img src="Icons\Untitled (2)\Iconsax\Linear\Vector.png" alt="">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ex.</p>
+                                    <img class="iconi" src="Icons\Untitled (2)\Iconsax\Linear\Vector.png" alt="">
+
+                                   <div class="fleri">
+                                    <h1 class="headrit">
+                                        GREAT TARIFFS
+                                        </h1>
+                                        <p>Rent A Car !Our car hire tariff are very low when compare to other operators in Lucknow. Book online cabs with best prices in Lucknow at Yatri Car Rental</p>
+                                   </div>
                                 </div>
                             </div>
                         </div>
@@ -195,37 +323,69 @@
             </div>
 
         </section>
+        <section class="emply">
+
+            <h1 class="Gheadi">
+                WHY CHOOSE ONEWAY CAB?
+            </h1>
+
+            <div class="coly">
+
+                <div class="listiclass">
+                    <ul class="listi">
+                        <li>INSTANT BOOKING & CONFIRMATION</li>
+                        <li>CONFIRMED BOOKING IMMEDIATELY</li>
+                        <li>NO RETURN FARE FOR ONE-WAY TRIP</li>
+                        <li>CLEAN & PROFESSIONAL CAB SERVICES</li>
+                        <li>NO NIGHT OR LUGGAGE CHARGES</li>
+
+
+                    </ul>
+
+                </div>
+    
+                <div class="listiclass">
+                    <ul class="listi">
+                        <li>PICK-UP FROM YOUR HOUSE</li>
+                        <li>DEDICATED CAB JUST FOR YOU
+                        </li>
+                        <li>DROP TO YOUR DESIRED DESTINATION</li>
+                        <li>COMPLETED MORE THAN 20,000+ ONE-WAY TRIPS</li>
+                        <li>MULTIPLE PAYMENT OPTION INCLUDING CREDIT CARD.</li>
+
+
+                    </ul>
+    
+                </div>
+
+
+            </div>
+        </section>
         <div class="footer">
 
             <div class="foot">
-                <h1 class="kalo">Lorem ipsum dolor sit amet consectetur a </h1>
+                <h1 class="Ghead">DISCOVERING INDIA'S DIVERSE LANDSCAPES, ONE SCENIC ROAD TRIP AT A TIME</h1>
                 <ul>
-                    <li class="lilu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iure magni natus
-                        praesentium, dolor at neque officia dolores officiis omnis soluta eveniet provident ea voluptas
-                        blanditiis sunt excepturi assumenda labore?</li>
+                    <li class="lilu">Experience the thrill of road travel with our reliable car rental and taxi service as we explore the diverse landscapes of India together.We're passionate about making car hire accessible and enjoyable for everyone.</li>
 
                     <li class="lilu">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iure magni natus praesentium,
-                        dolor at neque officia dolores officiis omnis soluta eveniet provident ea voluptas blanditiis
-                        sunt excepturi assumenda labore?
+                        Instead of worrying about the road, relax in our chauffeur - driven cabs on your next vacation.With a presence in over 2000 cities across India, we're here to take you wherever your heart desires with our car rental services.
                     </li>
 
                     <li class="lilu">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iure magni natus praesentium,
-                        dolor at neque officia dolores officiis omnis soluta eveniet provident ea voluptas blanditiis
-                        sunt excepturi assumenda labore?
+                        We cherish the freedom to stop, breathe in the fresh air, immerse in local cultures, and Savor regional cuisines along the way.These moments of discovery enrich your travels and create lasting memories through our rent a car service
                     </li>
 
                     <li class="lilu">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iure magni natus praesentium,
-                        dolor at neque officia dolores officiis omnis soluta eveniet provident ea voluptas blanditiis
-                        sunt excepturi assumenda labore?
+                        No destination is too far or too close; we encourage you to explore the beauty around you with our car hire options.Pack your bags, set out on weekend adventures, and uncover the gems in your vicinity with our taxi service.
                     </li>
 
                     <li class="lilu">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iure magni natus praesentium,
-                        dolor at neque officia dolores officiis omnis soluta eveniet provident ea voluptas blanditiis
-                        sunt excepturi assumenda labore?
+                        Planning your trip is a breeze with our user - friendly website, or you can chat with our travel experts at 8960170877 for personalized guidance on car rental.Our cab booking app simplifies the process, ensuring a hassle - free experience when you rent a car.
+                    </li>
+
+                    <li class="lilu">
+                        Our experienced drivers are your companions on the road, guiding you through India's best experiences with our car rental and taxi service. From booking to your safe return home, we're dedicated to ensuring you have an exceptional road trip.
                     </li>
                 </ul>
 
@@ -238,82 +398,90 @@
 
         <div class="lamba">
             <div class="cardni">
-                <h1 class="sirr">Hello there</h1>
+                <h1 class="sirr">Cab Type</h1>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, laborum.</p>
+                <p>AC Sedans
+                    AC Hatchbacks
+                    AC SUV</p>
             </div>
 
             <div class="cardni">
-                <h1 class="sirr">Hello there</h1>
+                <h1 class="sirr">Models Include</h1>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, laborum.</p>
+                <p>Etios, Amaze, Dzire etc.
+                    Wagon R, Celerio, Micra etc.
+                    Ertiga, Xylo etc.</p>
             </div>
 
             <div class="cardni">
-                <h1 class="sirr">Hello there</h1>
+                <h1 class="sirr">Passengers</h1>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, laborum.</p>
+                <p>4 Pax
+                    4 Pax
+                    6-7 Pax</p>
+            </div>
+
+            
+
+            <div class="cardni">
+                <h1 class="sirr">Ideal For</h1>
+                <hr>
+                <p>Comfortable trips with small families
+                    Budget trips over short distances
+                    Premium trips with large families</p>
             </div>
 
             <div class="cardni">
-                <h1 class="sirr">Hello there</h1>
+                <h1 class="sirr">Fare</h1>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, laborum.</p>
-            </div>
-
-            <div class="cardni">
-                <h1 class="sirr">Hello there</h1>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, laborum.</p>
+                <p>Rs.11/KM
+                    Rs.11/KM
+                    Rs.13/KM</p>
             </div>
         </div>
 
 
         <div class="lasty">
 
-            <h1 class="kalo">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quibusdam.
+            <h1 class="Ghead">
+                WHY CHOOSE YATRI CAR RENTAL?
 
             </h1>
 
             <ul>
                 <li class="lilu">
 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos inventore soluta nihil dicta a
-                    facere omnis magni. Dignissimos suscipit porro reprehenderit laudantium voluptatibus magnam est
-                    laboriosam dolores incidunt itaque.
+                    Yatri Car Rental has been a trusted digital platform for booking local and outstation car rental and taxi services since 2014. Our primary goal is to offer our clients an exceptional car rental and cab booking experience, and we take great pride in our commitment to safety, reliability, and experienced drivers. These qualities are evident across all our car rental services, making us the preferred choice for those seeking rental cars and taxi services in INDIA.
 
                 </li>
 
                 <li class="lilu">
 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos inventore soluta nihil dicta a
-                    facere omnis magni. Dignissimos suscipit porro reprehenderit laudantium voluptatibus magnam est
-                    laboriosam dolores incidunt itaque.
+                    Service You Can Trust - At Yatri Car Rental, we are dedicated to providing dependable services in INDIA. We guarantee that we won't cancel any bookings without advance notification, and our rental cars are meticulously maintained to ensure a seamless and stress-free journey for our clients.
 
                 </li>
 
                 <li class="lilu">
 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos inventore soluta nihil dicta a
-                    facere omnis magni. Dignissimos suscipit porro reprehenderit laudantium voluptatibus magnam est
-                    laboriosam dolores incidunt itaque.
+                    Safety is Our Priority - Safety and comfort are paramount at Yatri Car Rental in INDIA. We exclusively hire experienced and skilled drivers who possess in-depth knowledge of the city's roads and traffic regulations. Our drivers are committed to delivering excellent customer service and ensuring a comfortable and stress-free travel experience for passengers.
 
                 </li>
 
                 <li class="lilu">
 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos inventore soluta nihil dicta a
-                    facere omnis magni. Dignissimos suscipit porro reprehenderit laudantium voluptatibus magnam est
-                    laboriosam dolores incidunt itaque.
+                    Expert Chauffeurs at Your Service - Yatri Car Rental takes pride in selecting only the most skilled, knowledgeable, and courteous drivers to enhance the convenience and satisfaction of our clients.
 
                 </li>
 
                 <li class="lilu">
 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos inventore soluta nihil dicta a
-                    facere omnis magni. Dignissimos suscipit porro reprehenderit laudantium voluptatibus magnam est
-                    laboriosam dolores incidunt itaque.
+                    Extensive Industry Experience - With over 10 years of industry expertise, Yatri Car Rental is your go-to choice for premium car hire services in Lucknow, Uttar Pradesh.
+
+                </li>
+
+                <li class="lilu">
+
+                    Proven Track Record - We place a strong emphasis on transparency in our billing system and consistently strive to provide a seamless and satisfactory experience for our customers. Our commitment to customer comfort and satisfaction is evident in our outstanding Google ratings, where we consistently receive ratings of 4.8 stars or higher.
 
                 </li>
 
@@ -325,30 +493,94 @@
         </div>
 
         <footer class="footer">
-           <div class="foolast">
-            <div class="fooim">
-                <img src="images\RIDE EVEE Logo 1.png" alt="logo">
+            <div class="foolast">
+                <div class="fooim">
+                    <img src="images\RIDE EVEE Logo 1.png" alt="logo">
+                </div>
+
+                <div class="foolin">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">services</a>
+                    <a href="#">News</a>
+                    <a href="#">Contact</a>
+                </div>
+
+
+                <input class="fooinp" type="text" placeholder="Type your gmail id here...">
+                <button>
+                    Hello
+                </button>
+            </input>
+
+
+
+
             </div>
+            <p class="lastp">All copyrights are reserved by RIDE EVEE</p>
 
-            <div class="foolin">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">services</a>
-                <a href="#">News</a>
-                <a href="#">Contact</a>
-            </div>
 
-            
-        <input class="fooinp" type="text" placeholder="Type your gmail id here...">
-            
-      
-       
-            
-           </div>
-           <p class="lastp">All copyrights are reserved by RIDE EVEE</p>
-
-           
         </footer>
+
+
+
+
+        <script>
+            // Function to change background color and text color of buttons
+            function changeButtonColor(buttonId) {
+                // Get all buttons with class "btn1" and "btn2"
+                var buttons = document.querySelectorAll(".btn1, .btn2");
+                var greenButtons = [];
+        
+                // Iterate through the buttons and collect the ones with green background
+                for (var i = 0; i < buttons.length; i++) {
+                    if (buttons[i].style.backgroundColor === "green") {
+                        greenButtons.push(buttons[i]);
+                    }
+                }
+        
+                // If there are already two green buttons, remove the background color and set text color to black from the oldest one
+                if (greenButtons.length >= 2) {
+                    greenButtons[0].style.backgroundColor = "";
+                    greenButtons[0].style.color = "black"; // Set text color to black
+                }
+        
+                // Toggle the background color and text color of the clicked button
+                var button = document.getElementById(buttonId);
+                if (button) {
+                    if (button.style.backgroundColor === "green") {
+                        button.style.backgroundColor = "";
+                        button.style.color = "black"; // Set text color to black
+                    } else {
+                        button.style.backgroundColor = "green";
+                        button.style.color = "white"; // Set text color to white when green
+                    }
+                }
+            }
+        
+            // Add click event listeners to the buttons with class "btn1"
+            document.getElementById("outstation").addEventListener("click", function () {
+                changeButtonColor("outstation");
+            });
+        
+            document.getElementById("locals").addEventListener("click", function () {
+                changeButtonColor("locals");
+            });
+        
+            document.getElementById("airports").addEventListener("click", function () {
+                changeButtonColor("airports");
+            });
+        
+            // Add click event listeners to the buttons with class "btn2"
+            document.getElementById("oneway").addEventListener("click", function () {
+                changeButtonColor("oneway");
+            });
+        
+            document.getElementById("roundtrip").addEventListener("click", function () {
+                changeButtonColor("roundtrip");
+            });
+        </script>
+        
 
 
 </body>
