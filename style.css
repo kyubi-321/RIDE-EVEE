@@ -419,9 +419,11 @@ ion-icon {
 }
 
 .carhead{
+    width: fit-content;
     color: #38B000;
     font: bold;
     font-weight: 800;
+    margin-left: 300px;
 }
 
 .mytext{
